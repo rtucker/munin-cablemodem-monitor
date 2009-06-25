@@ -1,0 +1,26 @@
+This is a Munin plugin that screen-scrapes various modem status information
+off of the web interface on my Ambit modem, provided by RoadRunner in
+Rochester, New York.
+
+This probably won't work for you, but it's here as inspiration and a
+possible base for future exploration.  You can see it in action a bit
+at:
+
+http://blog.hoopycat.com/index.php/a-munin-plugin-for-monitoring-cable-mode
+
+I have a bunch of symlinks in /etc/munin/plugins as follows:
+
+rtucker@hennepin:~$ ls -l /etc/munin/plugins/docsis_*
+lrwxrwxrwx 1 root root 31 2009-06-10 17:10 /etc/munin/plugins/docsis_Downstream.Frequency -> /home/rtucker/bin/modemcheck.py
+lrwxrwxrwx 1 root root 31 2009-06-10 17:09 /etc/munin/plugins/docsis_Downstream.Receive.Power.Level -> /home/rtucker/bin/modemcheck.py
+lrwxrwxrwx 1 root root 31 2009-06-10 17:09 /etc/munin/plugins/docsis_Downstream.SNR -> /home/rtucker/bin/modemcheck.py
+lrwxrwxrwx 1 root root 31 2009-06-10 17:10 /etc/munin/plugins/docsis_Downstream.Symbol.Rate -> /home/rtucker/bin/modemcheck.py
+lrwxrwxrwx 1 root root 31 2009-06-10 17:10 /etc/munin/plugins/docsis_Upstream.Frequency -> /home/rtucker/bin/modemcheck.py
+lrwxrwxrwx 1 root root 31 2009-06-10 17:10 /etc/munin/plugins/docsis_Upstream.Symbol.Rate -> /home/rtucker/bin/modemcheck.py
+lrwxrwxrwx 1 root root 31 2009-06-10 17:10 /etc/munin/plugins/docsis_Upstream.transmit.Power.Level -> /home/rtucker/bin/modemcheck.py
+
+What you need might vary.  Play around.  :-)
+
+Ryan Tucker <rtucker@gmail.com>
+
+
