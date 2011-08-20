@@ -4,8 +4,11 @@
 # Assumes the WebSTAR modem that is in my wiring closet right now.
 # Ryan Tucker <rtucker@gmail.com>, 2011 August 19
 
-# To use with munin, symlink in /etc/munin/plugins like:
-# cablemodem_Downstream.Frequency
+# REQUIRES:
+#   * python-beautifulsoup
+
+ #%# family=auto
+ #%# capabilities=autoconf suggest
 
 from BeautifulSoup import BeautifulSoup
 from contextlib import contextmanager
