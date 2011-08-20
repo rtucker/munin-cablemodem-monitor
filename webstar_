@@ -324,7 +324,7 @@ if __name__ == '__main__':
                 units = 'seconds'
             name = obj.system['Name_0']
 
-            print "graph_title %s %s - %s" % (group, metric, name)
+            print "graph_title WebSTAR %s %s" % (group, metric)
             print "graph_vlabel %s" % units
             print "graph_category network"
             print "graph_info Shows %s %s for a %s cable modem." % (group, metric, name)
